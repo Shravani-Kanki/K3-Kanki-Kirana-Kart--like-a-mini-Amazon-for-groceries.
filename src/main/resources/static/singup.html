@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign Up</title>
+    <!-- <link rel="icon" type="image/jpeg" href="Downloads/pexels-eosvini-2113125.jpg"> -->
+    <link rel="stylesheet" href="css/singup.css" />
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h2>Sign Up</h2>
+        <p class="info">Create your account with a username and phone number.</p>
+
+        <form id="signupForm" novalidate>
+            <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    placeholder="Username"
+                    required
+                    minlength="3"
+                    maxlength="30"
+                    autocomplete="username"
+            />
+
+            <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="Phone (eg. 8180901022)"
+                    required
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    inputmode="numeric"
+                    autocomplete="tel"
+            />
+
+            <button type="submit" id="SignupBtn" class="btn">Sign Up</button>
+
+        </form>
+
+        <div id="message" class="info" aria-live="polite" style="display:none;"></div>
+
+        <div class="extra-links">
+            <p>Already have an account? <a href="index.html">Login Here</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for showing confirmation -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <h3>Signup Successful!</h3>
+        <p id="signupMsg">Welcome! Your account has been created.</p>
+        <p>
+            You can now <a href="index.html">Log in</a> with your credentials.
+        </p>
+        <a id="Close" class="btn">Close</a>
+    </div>
+</div>
+
+<script src="js/singup.js" defer></script>
+</body>
+</html>

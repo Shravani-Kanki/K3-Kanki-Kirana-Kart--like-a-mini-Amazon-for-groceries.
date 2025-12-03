@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanki_Kirana</title>
+    <link rel="icon" type="image/jpeg" href="Downloads/pexels-eosvini-2113125.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<!-- header section-->
+
+<header class="header">
+    <a href="#" class="logo">
+        <i class="fa-solid fa-basket-shopping"></i> Grocery
+    </a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+
+    </nav>
+
+    <div class="icons">
+        <div class="fa-solid fa-bars" id="menu-btn"></div>
+        <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+        <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+        <div class="fa-solid fa-user-lock" id="login-btn"></div>
+    </div>
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here...">
+        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+
+    </form>
+
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fa-solid fa-trash"></i>
+            <img src="../src-massor/massor.jpg" alt="Massor"/>
+            <div class="content">
+                <h3> Massor-Dal</h3>
+                <span class="Price">200/-Rs</span>
+                <span class="Quantity">Qty:1kg</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-trash"></i>
+            <img src="../src-massor/rice.jpg" alt="Rice"/>
+            <div class="content">
+                <h3> Rice </h3>
+                <span class="Price">2500/-Rs</span>
+                <span class="Quantity">Qty:20kg</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-trash"></i>
+            <img src="../src-massor/sugar.jpg" alt="Sugar"/>
+            <div class="content">
+                <h3>Sugar</h3>
+                <span class="Price">500/-Rs</span>
+                <span class="Quantity">Qty:10kg</span>
+            </div>
+        </div>
+
+        <div class="Total">Total: 3900/- Rs</div>
+        <a href="#" class ="btn">Checkout</a>
+    </div>
+
+
+
+    <form action="#" id="login-form"  class="login-form">
+        <h3>Login Now</h3>
+        <input  id="phone" type="text" placeholder="Enter Your Phone No." class="box">
+        <input  id="password" type="password" placeholder="Enter Your Password" class="box">
+        <p id="message" style="margin-top: 5px; font-weight: bold;"></p>
+        <div class="extra-links">
+            <p>Forget Your Password? <a href="forgot.html">Click Here</a></p>
+            <p>Don't Have an Account? <a href="singup.html">Create Here</a></p>
+        </div>
+        <button type="submit" class="btn">Login Now</button>
+
+    </form>
+
+</header>
+
+<!-- header completed-->
+
+<!-- Banner Section-->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3> Kanki Kirana Shop </h3>
+        <h2>Quality Products, Trusted Service Since 1992</h2>
+        <p>Welcome to Kanki Kirana Shop — your one-stop destination for fresh groceries, daily essentials, and household needs. We are committed to serving you with quality products at fair prices, making your shopping simple, convenient, and reliable</p>
+
+        <a href="categories.html" class="btn"> Shop Now </a>
+    </div>
+</section>
+
+
+<!-- banner completed-->
+
+
+<!-- Feature section-->
+<section class="features" id="features">
+    <h1 class="heading">Our <span>Features</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="../src-massor/feature1.jpg" alt="features">
+            <h3> Quality and Reasonable Price</h3>
+            <p> We believe in offering only the best for our customers. Along with trusted brands and fresh items, we ensure reasonable prices so you get great value for your money — quality products at prices that fit every budget.</p>
+            <a href="feature-quality.html" class="btn">Read More</a>
+        </div>
+        <div class="box">
+            <img src="../src-massor/feature2.jpg" alt="features">
+            <h3> Free Delivery</h3>
+            <p> Enjoy the convenience of shopping from home with Kanki Kirana Shop. We provide free delivery on all your grocery and household essentials, right to your doorstep. No extra charges, no hidden costs — just fresh products delivered quickly and hassle-free.</p>
+            <a href="feature-delivery.html" class="btn">Read More</a>
+        </div>
+        <div class="box">
+            <img src="../src-massor/feature3.jpg" alt="features">
+            <h3> Easy Payment</h3>
+            <p> We accept multiple payment options — from cash and UPI to cards and popular digital wallets. Choose the method that works best for you and enjoy a seamless, secure, and easy checkout every time.</p>
+            <a href="feature-payment.html" class="btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Feature section completed--->
+
+
+<!-- Product section    --->
+<section class="products" id="products">
+    <h1 class="heading">Our <span>Products</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class=" swiper-slide box">
+                <img src="../src-massor/rice.jpg" alt="rice">
+                <h1>Royal Rice</h1>
+                <div class="price">1200/-Rs - 5000/-Rs</div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="" class="btn">Add to cart</a>
+            </div>
+            <div class=" swiper-slider box">
+                <img src="../src-massor/wheat.jpg" alt="wheat">
+                <h1>Wheat</h1>
+                <div class="price">400/-Rs - 1500/-Rs</div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-massor/massor.jpg" alt="masoor">
+                <h1>Masoor Dal</h1>
+                <div class="price">90/-Rs - 200/-Rs</div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-massor/sugar.jpg" alt="sugar">
+                <h1>Sugar</h1>
+                <div class="price">40/-Rs - 100/-Rs</div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="" class="btn">Add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-massor/udit-dal.jpg" alt="udit">
+                <h1>Udit Dal</h1>
+                <div class="price">80/-Rs - 120/-Rs</div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="" class="btn">Add to cart</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- product section completed--->
+
+<!-- categories section --->
+
+
+<section class="categories" id="categories">
+    <h1 class="heading">Product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="../src-category/dairy.jpg" alt="dairy">
+            <h3>Dairy Products</h3>
+            <p>Upto 20% Off</p>
+            <a href="categories.html#dairy" class="btn">Shop now</a>
+        </div>
+        <div class="box">
+            <img src="../src-category/stationary.jpg" alt="stationary">
+            <h3>Stationary Products</h3>
+            <p>Upto 20% Off</p>
+            <a href="categories.html#stationary" class="btn">Shop now</a>
+        </div>
+        <div class="box">
+            <img src="../src-category/grains.jpg" alt="grain">
+            <h3> Grain Products</h3>
+            <p>Upto 20% Off</p>
+            <a href="categories.html#grains" class="btn">Shop now</a>
+        </div>
+        <div class="box">
+            <img src="../src-category/snacks.jpg" alt="snacks">
+            <h3>Snack Products</h3>
+            <p>Upto 20% Off</p>
+            <a href="categories.html#snacks" class="btn">Shop now</a>
+        </div>
+    </div>
+</section>
+
+<!-- categories section completed--->
+
+
+<!-- Review section --->
+
+<section class="review" id="review">
+    <h1 class="heading"> Customer's<span>Review</span></h1>
+
+    <div class=" swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="../src-review/personIcon.jpg" alt="person">
+                <p>Kanki Kirana Shop is my go-to place in Solapur for all grocery and dairy items. The prices are very reasonable, and the staff is always polite and helpful. Highly recommend it to everyone nearby!
+                </p>
+                <h3>Satish Sakhare</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-review/personIcon.jpg" alt="person">
+                <p> Very well-organized shop! You can find everything here — groceries, snacks, and even stationery items. The owner is friendly and always greets customers with a smile. Great service!
+                </p>
+                <h3>Gundappa Hulgeri</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-review/personIcon.jpg" alt="person">
+                <p> Good quality products at affordable rates. The shop is clean and everything is easy to find. I really like their collection of dairy products and snacks.Must visit once.
+                </p>
+                <h3>Chandrashekhar Ande</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-review/personIcon.jpg" alt="person">
+                <p> Excellent customer service! The staff is always ready to help you find what you need. Prices are much better compared to other shops in the area. Best kirana store in Solapur!
+                </p>
+                <h3>Sarita Nilam</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="../src-review/personIcon.jpg" alt="person">
+                <p>A complete family store — from daily essentials to stationery, everything is available under one roof. The owner is very humble and provides quick service. Love shopping here!
+                </p>
+                <h3>Parvati Nibalakar</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Review section completed--->
+
+<!-- blogs section --->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading"> Our<span>Blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="../src-blog/blog1.jpg" alt="b1">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-user"> By User</i></a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"> 1st May 2025r</i></a>
+                </div>
+                <h3>Fresh and oraganic Grocery</h3>
+                <p>I received my grocery order on time, and everything was perfectly packed. The fruits and vegetables were really fresh and organic. I’m very satisfied with the quality and service!</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../src-blog/blog2.jpg" alt="b2">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-user"> By User</i></a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"> 1st May 2025r</i></a>
+                </div>
+                <h3>Loved the Freshness Grocery</h3>
+                <p>I’m really impressed with the quality of the groceries. Everything was fresh, clean, and looked completely organic. Great service and fast delivery too!</p>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="../src-blog/blog3.jpg" alt="b3">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-user"> By User</i></a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"> 1st May 2025r</i></a>
+                </div>
+                <h3>Great Quality and Fast Delivery</h3>
+                <p>The order arrived quickly, and the groceries were in excellent condition. The fruits and vegetables were so fresh and organic. Highly recommend their service!</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../src-blog/blog4.jpg" alt="b4">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-user"> By User</i></a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"> 1st May 2025r</i></a>
+                </div>
+                <h3>Truly Impressed with the Quality</h3>
+                <p>I wasn’t expecting such good quality, but the groceries were beyond my expectations. Everything was super fresh and clearly organic. The packaging was neat, and delivery was on time. Great experience overall!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- blogs section completed--->
+
+
+<!-- footer section --->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3> Groco <i class="fa-solid fa-basket-shopping"></i></h3>
+            <p> Feel Free To Follow Us On Our Social Media Handlers All The Links Are Given Below. </p>
+            <div class="share">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-square-instagram"></a>
+                <a href="#" class="fa-brands fa-square-whatsapp"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3> Contact Info </h3>
+            <a href="#" class="links"> <i class="fa-solid fa-phone"></i> +91 9226107822</a>
+            <a href="#" class="links"> <i class="fa-solid fa-phone"></i> +91 8180901022</a>
+            <a href="#" class="links"> <i class="fa-solid fa-phone"></i>  kankishravani1010@gmail.com</a>
+            <a href="#" class="links"> <i class="fa-solid fa-location-dot"></i> 51/03/29 SatyaSai Nagar, Lokseva High School,Solapur.</a>
+        </div>
+        <div class="box">
+            <h3> Contact Info </h3>
+            <a href="#" class="links"> <i class="fa-solid fa-arrow-right"></i>Home</a>
+            <a href="#" class="links"> <i class="fa-solid fa-arrow-right"></i>Features</a>
+            <a href="#" class="links"> <i class="fa-solid fa-arrow-right"></i>Products</a>
+            <a href="#" class="links"> <i class="fa-solid fa-arrow-right"></i>Categories</a>
+            <a href="#" class="links"> <i class="fa-solid fa-arrow-right"></i>Review</a>
+            <a href="#" class="links"> <i class="fa-solid fa-arrow-right"></i>Blogs</a>
+        </div>
+        <div class="box">
+            <h3> NewSletter </h3>
+            <p>Subscribe For Latest Updates </p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+        </div>
+    </div>
+</section>
+
+
+<!-- footer section completed --->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+
+
+</html>

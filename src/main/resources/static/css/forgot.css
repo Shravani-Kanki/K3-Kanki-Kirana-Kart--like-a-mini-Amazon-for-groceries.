@@ -1,0 +1,120 @@
+/* ==== Background ==== */
+body {
+    font-family: Poppins, sans-serif;
+    background: #fff6e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ==== Container ==== */
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ==== Form Box ==== */
+.form-box {
+    background: #fff;
+    width: 330px;
+    padding: 35px 28px;
+    border-radius: 15px;
+    border-top: 5px solid #ff8c42;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 8px;
+    color: #ff6a00;
+}
+
+.info {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* ==== Inputs ==== */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1.6px solid #ffaf66;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* ==== Button ==== */
+button {
+    width: 95%;
+    padding: 12px;
+    background: #ff7a25;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #e5681f;
+}
+
+/* ==== Links ==== */
+.extra-links {
+    margin-top: 15px;
+}
+
+.extra-links a {
+    color: #ff6a00;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==== Modal ==== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid #ff7a25;
+    text-align: center;
+}
+
+.big-pw {
+    font-size: 22px;
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+.close-btn {
+    margin-top: 15px;
+    background: #ff7a25;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #e5681f;
+}

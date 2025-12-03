@@ -1,0 +1,140 @@
+/* ===========================
+   GLOBAL THEME
+=========================== */
+
+:root {
+    --orange-main: #ff7a25;
+    --orange-light: #ff9c53;
+    --orange-border: #ffb983;
+    --bg-light: #fff6e9;
+    --text-dark: #333;
+    --text-light: #555;
+    --shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+/* ===========================
+   PAGE BASE
+=========================== */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* Wrapper centers the card */
+.feature-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ===========================
+   CARD STYLING
+=========================== */
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.feature-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   TITLES & TEXT
+=========================== */
+
+h1 {
+    color: var(--orange-main);
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: var(--text-light);
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+/* ===========================
+   LIST
+=========================== */
+
+.feature-highlights {
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.feature-highlights li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+
+.back-btn {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 20px;
+    background: var(--orange-main);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: var(--orange-light);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.page-footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 700px) {
+    .feature-card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .feature-image {
+        max-height: 260px;
+    }
+}
